@@ -1,20 +1,20 @@
 ---
 layout: workshop
 root: .
-venue: Monash University, Clayton Campus
-address: E365 Menzies Building, 20 Chancellor's Walk (lvl3 East wing)
+venue: Monash Biomedical Imaging
+address: 762-772 Blackburn Rd Clayton
 country: Australia
 language: en
-latlng: -37.912270, 145.132756
-humandate: Mar 31, 2016
+latlng: -37.912403, 145.141803
+humandate: Jun 2 &amp; 3, 2016
 humantime: 10:00 am - 5:00 pm
-startdate: 2015-10-29
-enddate: 2015-10-29
-instructor: ["Steve Androulakis", "Andrew Perry", "Jason Rigby"]
-helper: ["Adele Barugahare","Wishva Hearth"]
+startdate: 2016-06-01
+enddate: 2015-06-02
+instructor: ["Steve Androulakis", "Paul Harrison", "Haroon Naeem", "Stuart Archer", "Roxane Legaie"]
+helper: ["TBA"]
 contact: steve.androulakis@monash.edu
-etherpad: https://beta.etherpad.org/p/2016-03-31-intro-python  # optional (insert the URL for your Etherpad if you're using one)
-eventbrite: 23758346855 # optional (delete this if not used, otherwise uncomment and provide 1234567890AB key for Eventbrite registration)
+etherpad: https://beta.etherpad.org/p/2016-06-01-r-rnaseq  # optional (insert the URL for your Etherpad if you're using one)
+eventbrite: 25638024020 # optional (delete this if not used, otherwise uncomment and provide 1234567890AB key for Eventbrite registration)
 ---
 <!--
   HEADER
@@ -34,11 +34,11 @@ eventbrite: 23758346855 # optional (delete this if not used, otherwise uncomment
   displayed if the 'eventbrite' field in the header is not set.
 -->
 
-<div style="text-align: center; color: gray; padding: 10px; font-size: 22px">Thank You and Congrats.
- All 40+ places have been filled within 24 hours. 
+<!-- <div style="text-align: center; color: gray; padding: 10px; font-size: 22px">Thank You and Congrats.
+ All places have been filled within 24 hours. 
  Feel free to add your name to the waitlist and you might get into the course when others cancel.
- All names on the waitlist will be notified about the next Python workshop before its publicly advertised.
- </div>
+ All names on the waitlist will be notified about the next R / RNAseq workshop before its publicly advertised.
+ </div> -->
 
 {% if page.eventbrite %}
 <iframe
@@ -50,7 +50,7 @@ eventbrite: 23758346855 # optional (delete this if not used, otherwise uncomment
 </iframe>
 {% endif %}
 
-<h3>Intro to Python</h3>
+<h3>RNAseq Using R</h3>
  
 <p align="center">
 <img style="width: 90%" src="http://biotraining.erc.monash.edu/photos/1510%20Python/photos/small/IMG_0762.JPG"/>
@@ -62,16 +62,29 @@ eventbrite: 23758346855 # optional (delete this if not used, otherwise uncomment
   Edit the general explanatory paragraph below if you want to change
   the pitch.
 -->
-<p>The <a href="http://platforms.monash.edu/bioinformatics/" target="_blank">Monash Bioinformatics Platform</a> want to help make introductory bioinformatic approaches part of the research landscape in Biomedicine. To do this, a foundation level of expertise amongst as many researchers as possible is an important step forward. The Python programming language is versatile and popular in the bioinformatics community.</p>
+<p>The <a href="http://platforms.monash.edu/bioinformatics/" target="_blank">Monash Bioinformatics Platform</a> want to help make introductory bioinformatic approaches part of the research landscape in Biomedicine. To do this, a foundation level of expertise amongst as many researchers as possible is an important step forward. The platform will then be available to facilitate this work as well as develop more advanced bioinformatic projects with our researchers.</p>
 
-<p>This workshop aims to equip participants with the fundamentals of programming and give them the skills needed to take bioinformatic approaches to research questions.
+<p>We are running a two day hands-on workshop with a focus on enabling researchers to be able to analyse RNASeq (next-gen sequencing) data.
+<ul>
+  <li><strong>Day 1</strong>, we will begin by teaching an introduction to programming using the <a href="https://www.r-project.org" target="_blank">R</a> language.</li>
+  <li><strong>Day 2</strong> will focus on using this knowledge to perform bioinformatic data analysis of some RNASeq data.</li>
+</ul></p>
+
+<p>
+  The workshop will be taught in a similar style to Software Carpentry workshops. <a href="{{site.swc_site}}">Software Carpentry</a>'s mission
+  is to help scientists and engineers get more research done in less
+  time and with less pain by teaching them basic lab skills for
+  scientific computing.
 </p>
 <p>
- <p>
-  The workshop will be taught in a similar style to Software Carpentry workshops. <a href="{{site.swc_site}}">Software Carpentry</a>'s mission
-   is to help scientists and engineers get more research done in less
-   time and with less pain by teaching them basic lab skills for
-   scientific computing.
+  
+</p>
+<p align="center">
+  <em>
+    For more information on what we teach and why,
+    please see our paper
+    "<a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745">Best Practices for Scientific Computing</a>".
+  </em>
 </p>
 
 <!--
@@ -142,31 +155,31 @@ eventbrite: 23758346855 # optional (delete this if not used, otherwise uncomment
   to match your plans.  You may also want to change 'Day 1' and 'Day
   2' to be actual dates or days of the week.
 -->
+<h2>Schedule</h2>
+
 <div class="row">
   <div class="col-md-6">
-    <h3>Schedule</h3>
+    <h3> Day 1 (Programming in R)</h3>
     <table class="table table-striped">
-      <tr> <td>10:00</td>  <td>Welcome and Setup</td> </tr>
-      <tr> <td>10:30</td> <td>Intro to Python</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch Break</td> </tr>
-      <tr> <td>13:00</td>  <td>Intro to Python</td> </tr>
-      <tr> <td>14:30</td>  <td>Break</td> </tr>
+      <tr> <td>10:00</td>  <td>Welcome and setup</td> </tr>
+      <tr> <td>10:30</td> <td>Intro to R</td> </tr>
+      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
+      <tr> <td>13:00</td>  <td>Intro to R</td> </tr>
+      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
       <tr> <td>16:30</td>  <td>Wrap-up</td> </tr>
     </table>
   </div>
   <div class="col-md-6">
-    <h3>Syllabus</h3>
-    <ul>
-      <li>Using libraries</li>
-      <li>Working with arrays</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Defensive programming</li>
-      <li>Using Python from the command line</li>
-      <li><a href="{{site.swc_githubio}}/python-novice-inflammation/reference.html">Reference...</a></li>
-    </ul>
-  </div>    
+    <h3>Day 2 (RNASeq using R)</h3>
+    <table class="table table-striped">
+      <tr> <td>10:00</td>  <td>Setup and introduction</td> </tr>
+      <tr> <td>10:30</td>  <td>RNASeq using R</td> </tr>
+      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
+      <tr> <td>13:00</td>  <td>RNASeq using R</td> </tr>
+      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
+      <tr> <td>16:30</td>  <td>Wrap-up</td> </tr>
+    </table>
+  </div>
 </div>
 
 <!--
