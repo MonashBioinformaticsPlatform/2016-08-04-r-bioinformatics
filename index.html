@@ -14,7 +14,7 @@ instructor: ["Adele Barugahare", "Steve Androulakis", "Paul Harrison", "Haroon N
 helper: ["TBA"]
 contact: steve.androulakis@monash.edu
 etherpad: https://beta.etherpad.org/p/2016-06-01-r-rnaseq  # optional (insert the URL for your Etherpad if you're using one)
-eventbrite: 25638024020 # optional (delete this if not used, otherwise uncomment and provide 1234567890AB key for Eventbrite registration)
+eventbrite: ["25638024020", "26573048704"] # optional (delete this if not used, otherwise uncomment and provide 1234567890AB key for Eventbrite registration)
 ---
 <!--
   HEADER
@@ -41,13 +41,16 @@ eventbrite: 25638024020 # optional (delete this if not used, otherwise uncomment
  </div>
 
 {% if page.eventbrite %}
+{% for eventbrite in page.eventbrite %}
 <iframe
-  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
+  src="https://www.eventbrite.com/tickets-external?eid={{eventbrite}}&ref=etckt"
   frameborder="0"
   width="100%"
   height="248px"
   scrolling="auto">
 </iframe>
+<br/>
+{% endfor %}
 {% endif %}
 
 <h3>RNAseq Using R</h3>
