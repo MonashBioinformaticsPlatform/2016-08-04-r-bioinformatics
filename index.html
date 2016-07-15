@@ -43,9 +43,10 @@ eventbrite: ["26573121923", "26573048704","26573149004"] # optional (delete this
 -->
 
 {% if page.eventbrite %}
-
-<strong>Note: The date listed below on the tickets is when the ticket *sales* end, not the dates of the workshop. See above for the workshop dates (August 4, 5 and 11).</strong>
-
+<div align="center">
+<strong>Note: The date listed below on the tickets is when the ticket *registrations close*, not the dates of the workshop. See above for the workshop dates (August 4, 5 and 11).</strong>
+</div>
+<br/>
 {% for eventbrite in page.eventbrite %}
 <iframe
   src="https://www.eventbrite.com/tickets-external?eid={{eventbrite}}&ref=etckt"
